@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+<!DOCTYPE root [
+    <!ELEMENT root (logo,table-header, table)>
+    <!ELEMENT logo (logo-text)>
+    <!ELEMENT logo-text (#PCDATA)>
+
+
+    <!ELEMENT table (row*)>
+    <!ELEMENT table-header (#PCDATA)>
+
+    <!ELEMENT row (name, date-isue, validity, num, faculty)>
+    <!ATTLIST row id ID #REQUIRED>
+
+    <!ELEMENT name (#PCDATA|p)*>
+    <!ELEMENT date-isue (#PCDATA|p)*>
+    <!ELEMENT validity (#PCDATA|p)*>
+    <!ELEMENT num (#PCDATA|p)*>
+    <!ELEMENT faculty (#PCDATA|p)*>
+    <!ELEMENT p (#PCDATA)>
+
+    <!ENTITY name "ФІО">
+    <!ENTITY date-isue "Дата видачі">
+    <!ENTITY validity "Дійсний до">
+    <!ENTITY num "Номер">
+    <!ENTITY faculty "Факультет">
+]>
+
+<root>
+    <logo>
+        <logo-text>Lab 2.2 Сайт авіакомпанії</logo-text>
+    </logo>
+
+    <table-header>Дані у студентській картці</table-header>
+    <table>
+        <row id="r1">
+            <name>&name;: <p>В'ячеслав Юрійович Кравченко</p></name>
+            <date-isue>&date-isue;: <p>11.05.2020</p></date-isue>
+            <validity>&validity;: <p>11.05.2024</p></validity>
+            <num>&num;: КВ №<p>123456</p></num>
+            <faculty>&faculty;: <p>ФККПІ</p></faculty>
+        </row>
+
+        <row id="r2">
+            <name>&name;: <p>Олексаднр Володимирович Мельнік</p></name>
+            <date-isue>&date-isue;: <p>11.05.2019</p></date-isue>
+            <validity>&validity;: <p>11.05.2023</p></validity>
+            <num>&num;: <p>234567</p></num>
+            <faculty>&faculty;: <p>ФККПІ</p></faculty>
+        </row>
+
+    </table>
+</root>

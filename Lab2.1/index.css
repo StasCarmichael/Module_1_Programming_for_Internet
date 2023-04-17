@@ -1,0 +1,175 @@
+root {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+logo {
+	background-image: url('../img/nau_logo.jpg');
+	height: 100px;
+	text-align: center;
+	border: #111;
+	border-width: 10px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	display: block;
+}
+
+logo-text {
+	float: left;
+	margin-left: 50px;
+	font-size: 32px;
+	line-height: 107px;
+	font-weight: bold;
+
+}
+
+nav-menu {
+	font: menu;
+	float: left;
+	margin: 0 0 25px 0;
+	font-size: 23px;
+	padding: 10px 0 10px 0;
+
+	display: block;
+	width: 100%;
+	color: white;
+
+	background-color: #333;
+}
+
+nav-menu menu {
+	padding: 10px 20px 10px 20px;
+}
+
+nav-menu menu#active {
+	background-color: #fff;
+	color: #111;
+}
+
+nav-menu menu:hover:not(nav-menu menu#active) {
+	background-color: #111;
+}
+
+
+
+airplanes *{
+    display: block;
+}
+
+airplanes {
+    margin: 75px auto 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	width: 45%;
+    display: block;
+	margin: 0 auto 0 auto;
+	width: 45%;
+
+}
+
+column {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    width: 700px;
+
+    clear: both;
+    margin: 25px 0 50px 0;
+
+    transition: all 0.3s;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+column:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+column {
+    background-color: #147FA9;
+}
+
+
+
+price-top {
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    height: 220px;
+}
+
+price-bottom {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    display: block;
+}
+
+
+col-takeoff {
+    margin: 10px 0 0 10px;
+}
+
+cal-landing {
+    margin: 35px 0 0 10px;
+}
+
+
+row-header {
+    display: flex;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+row-header row-name {
+    margin-top: 10px;
+    width: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+row-header row-value {
+    margin-top: 10px;
+    width: 35%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+row-name {
+    width: 65%;
+    font-size: 20px;
+}
+
+row-value {
+    width: 90%;
+    font-size: 18px;
+    color: blue;
+}
+
+row-end {
+    width: 35%;
+    text-align: end;
+    font-size: 20px;
+}
+
+
+price-bottom img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+row {
+    display: flex;
+    width: 95%
+}
+
+
+
+
+column#r1 {
+    background-color: #147FA9;
+}
+
+column#r2 {
+    background-color: midnightblue
+}

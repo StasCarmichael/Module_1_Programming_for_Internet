@@ -1,0 +1,76 @@
+root {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	/* display: block; */
+}
+
+logo {
+	background-image: url('../img/nau_logo.jpg');
+	height: 100px;
+	text-align: center;
+	border: #111;
+	border-width: 10px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	display: block;
+}
+
+logo-text {
+	float: left;
+	margin-left: 50px;
+	font-size: 32px;
+	line-height: 107px;
+	font-weight: bold;
+
+}
+
+table {
+	display: block;
+	width: 30%;
+	margin: 10px auto 0 auto;
+	padding: 50px;
+
+	background-image: url('../img/nau_logo.jpg');
+	background-repeat:space;
+	background-position: 50%;
+}
+
+table-header {
+	font-size: 30px;
+	margin: 20px 0 40px 0;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+row {
+	font-size: 18px;
+	padding: 5px;
+	width: 100%;
+	background-color: #ffffffde;
+
+	margin-bottom: 25px;
+	transition: .5s;
+	display: block;
+	padding: 10px;
+	padding: 10px 10px 10px 10px;
+	
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+row *{
+	display:block;
+}
+
+row:hover {
+	transform: scale(1.05);
+}
+
+row p{
+	font-weight: bold;
+	display: inline;
+}

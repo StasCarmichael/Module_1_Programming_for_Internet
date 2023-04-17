@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="index.css"?>
+
+<!DOCTYPE root [
+<!ELEMENT root (logo,table)>
+<!ELEMENT logo (logo-text)>
+
+<!ELEMENT table (airplanes)>
+<!ELEMENT airplanes (column+)>
+<!ELEMENT table-header (column+)>
+
+<!ELEMENT column (row-header, price-bottom)>
+<!ATTLIST column id ID #REQUIRED>
+<!ELEMENT row-header (row-name, row-value)>
+<!ELEMENT price-bottom (col-takeoff, cal-landing)>
+
+<!ELEMENT col-takeoff (row+)>
+<!ELEMENT cal-landing (row+)>
+<!ELEMENT row (row-name, row-value?, row-end)>
+
+
+<!ELEMENT logo-text (#PCDATA)>
+<!ELEMENT row-name (#PCDATA)>
+<!ELEMENT row-value (#PCDATA)>
+<!ELEMENT row-end (#PCDATA)>
+<!ELEMENT overline (#PCDATA)>
+<!ELEMENT underline (#PCDATA)>
+]>
+
+<root>
+    <logo>
+        <logo-text>Lab 2.1 Сайт авіакомпанії</logo-text>
+    </logo>
+
+
+    <table>
+        <airplanes>
+            <column id="r1">
+                <row-header>
+                    <row-name>2553 ₴</row-name>
+                    <row-value>Компанії: Airbus</row-value>
+                </row-header>
+                <price-bottom>
+                    <col-takeoff>
+                        <row>
+                            <row-name>10:00</row-name>
+                            <row-end>18:00</row-end>
+                        </row>
+                        <row>
+                            <row-name>Київ</row-name>
+                            <row-value>Київ >>-->> Німеччина</row-value>
+                            <row-end>Німеччина</row-end>
+                        </row>
+                        <row>
+                            <row-name>22.02.2023</row-name>
+                            <row-end>22.02.2023</row-end>
+                        </row>
+                    </col-takeoff>
+                    <cal-landing>
+                        <row>
+                            <row-name>16:00</row-name>
+                            <row-end>18:00</row-end>
+                        </row>
+                        <row>
+                            <row-name>Німеччина</row-name>
+                            <row-value>Німеччина >>-->> Київ</row-value>
+                            <row-end>Київ</row-end>
+                        </row>
+                        <row>
+                            <row-name>29.02.2023</row-name>
+                            <row-end>29.02.2023</row-end>
+                        </row>
+                    </cal-landing>
+                </price-bottom>
+            </column>
+
+            <column id="r2">
+                <row-header>
+                    <row-name>2163 ₴</row-name>
+                    <row-value>Компанії: Airbus</row-value>
+                </row-header>
+                <price-bottom>
+                    <col-takeoff>
+                        <row>
+                            <row-name>10:00</row-name>
+                            <row-end>18:00</row-end>
+                        </row>
+                        <row>
+                            <row-name>Київ</row-name>
+                            <row-value>Київ >>-->> Франція</row-value>
+                            <row-end>Франція</row-end>
+                        </row>
+                        <row>
+                            <row-name>22.02.2023</row-name>
+                            <row-end>22.02.2023</row-end>
+                        </row>
+                    </col-takeoff>
+                    <cal-landing>
+                        <row>
+                            <row-name>16:00</row-name>
+                            <row-end>18:00</row-end>
+                        </row>
+                        <row>
+                            <row-name>Франція</row-name>
+                            <row-value>Франція >>-->> Київ</row-value>
+                            <row-end>Київ</row-end>
+                        </row>
+                        <row>
+                            <row-name>29.02.2023</row-name>
+                            <row-end>29.02.2023</row-end>
+                        </row>
+                    </cal-landing>
+                </price-bottom>
+            </column>
+        </airplanes>
+    </table>
+</root>

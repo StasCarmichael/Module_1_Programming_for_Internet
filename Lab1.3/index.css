@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#logo {
+    background-image: url('../img/nau_logo.jpg');
+    height: 100px;
+    text-align: center;
+    border: #111;
+    border-width: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+div#logo h1 {
+    margin-left: 50px;
+    text-align: left;
+    line-height: 65px;
+}
+
+div#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #147FA9;
+}
+
+div#header li a:hover {
+    background-color: #42444e;
+}
+
+div#header li a {
+    display: inline-table;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+div#header li#profile_li {
+    float: right;
+}
+
+div#header li {
+    float: left;
+}
+
+div#header h1 {
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 10px;
+    background: #e0e0e0;
+    color: #292929;
+}
+
+#container {
+    width: 62%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+div#navigation {
+    float: left;
+    width: 200px;
+    height: 500px;
+    background: #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+div#navigation li {
+    list-style-type: none;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/*                 */
+/* questions style */
+/*                 */
+
+airplanes {
+    margin: 75px 0 0 0;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+[class*="price-col"] {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    width: 700px;
+
+    clear: both;
+    margin: 25px 0 50px 0;
+
+    transition: all 0.3s;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+[class*="price-col"]:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.price-col-1 {
+    background-color: #147FA9;
+}
+
+.price-col-2 {
+    background-color: midnightblue
+}
+
+.price-top {
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    height: 220px;
+}
+
+.price-bottom {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+}
+
+
+
+
+.col-takeoff {
+    margin: 10px 0 0 10px;
+}
+
+.cal-landing {
+    margin: 35px 0 0 10px;
+}
+
+
+
+
+[class*="row-"] {
+    vertical-align: middle;
+}
+
+.row-header {
+    display: flex;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.row-header .row-name {
+    margin-top: 10px;
+    width: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.row-header .row-value {
+    margin-top: 10px;
+    width: 35%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.row-name {
+    width: 65%;
+    font-size: 20px;
+}
+
+.row-value {
+    width: 90%;
+    font-size: 18px;
+    color: blue;
+}
+
+.row-end {
+    width: 55%;
+    text-align: end;
+    font-size: 20px;
+}
+
+
+.price-bottom img {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    width: 95%
+}
+
+
+
+.text {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 0 0 100px 0;
+    width: auto;
+    font-size: 20px;
+    display: grid;
+}
+
+.text #t-header {
+    margin: 20px 0 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.text #t-value {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text #t-mark {
+    background-color: aqua;
+    border-radius: 7px;
+    text-decoration: underline;
+}
